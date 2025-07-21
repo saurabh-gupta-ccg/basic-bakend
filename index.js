@@ -8,6 +8,11 @@ app.get("/", (req, res) => {
 app.get("/twitter", (req, res) => {
   res.send("saurabhtwit@gupta");
 });
+app.get('/github',(req,res)=>{
+  res.send({name:'saurabh',
+    id: '0001'
+  })
+})
 app.get("/login",(req,res)=>{
     res.send("go on the login page");
 })
